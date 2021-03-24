@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+h1 {
+    -webkit-text-stroke: 1px #82A1D4;
+    font-family: 'Fredoka One', cursive;
+    font-size: 70px;
+    color: #d1fcb8;
+
+}
+
+.wrap {
+    background-color: #F7CED9;
+    color: #528FBB;
+    width: 240px;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    border-radius: 3%;
+    border: 5px solid #256B8B;
+}
+
+.screen{
+    text-align: end;
+    padding: 10px;
+}
+
+.screen h2{
+    margin: 0px 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 60px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "clear clear clear ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    "zero zero . .";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 30px 5px 0px; /* top right&left bottom */
+}
+
+.btn {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: #528FBB;
+    background-color: #B3D4F3;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    border: 2px solid #F1F3E2;
+}
+
+.clear {
+    grid-area: clear;
+    background: #CAA8C7;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.wide {
+    border-radius: 5px;
+    width: auto;
+}
+
+.operator {
+    background-color: #D4E5CA;
+}
