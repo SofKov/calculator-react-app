@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 h1 {
     -webkit-text-stroke: 1px #82A1D4;
     font-family: 'Fredoka One', cursive;
@@ -12,12 +18,12 @@ h1 {
 .wrap {
     background-color: #F7CED9;
     color: #528FBB;
-    width: 240px;
+    width: 260px;
     padding: 10px 0px;
     display: grid;
     grid-template-rows: 60px 1fr;
     border-radius: 3%;
-    border: 5px solid #256B8B;
+    border: 5px solid #82A1D4;
 }
 
 .screen{
@@ -57,7 +63,7 @@ h1 {
 
 .clear {
     grid-area: clear;
-    background: #CAA8C7;
+    background: #E5ADC6;
 }
 
 .zero {
@@ -71,4 +77,16 @@ h1 {
 
 .operator {
     background-color: #D4E5CA;
+}
+
+h4, a{
+    -webkit-text-stroke: 0.5px #7198d8;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: #bafc95;
+}
+
+h4 a:hover, a::after{
+    -webkit-text-stroke: 0.5px #fd81fd;
+    color: #e4bcff;
 }

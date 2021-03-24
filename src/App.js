@@ -52,8 +52,8 @@ class App extends React.Component{
 // render method
   render() {
     return(
-      <div>
-        <h1>Calculator</h1>
+      <div className = "container">
+        <h1>Calculator App</h1>
 
         <div className = "wrap">
           <div className = "screen">
@@ -72,7 +72,8 @@ class App extends React.Component{
             })}
           </div>
         </div>
-
+      
+        <h4>Made with 💜 | <a href="https://github.com/SofKov" target="_blank">My GitHub</a></h4>
       </div>
     );
   };
