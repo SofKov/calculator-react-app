@@ -32,10 +32,10 @@ class App extends React.Component{
 
 //originally started with each esle if statement as a seperate function, combine all three under one function for calculator
   handleInput = (val) => {
-    if (val == "AC"){
+    if (val === "AC"){
       this.setState({screen: ["0"]});
     }
-    else if (val == "="){
+    else if (val === "="){
       let evalStr = this.state.screen.join("");
       let output = evaluate(evalStr);
       this.setState({screen: [output]});
@@ -73,7 +73,7 @@ class App extends React.Component{
           </div>
         </div>
       
-        <h4>Made with 💜 | <a href="https://github.com/SofKov" target="_blank">My GitHub</a></h4>
+        <h4>Made with 💜 | <a target="_blank" rel="noopener noreferrer" href="https://github.com/SofKov">My GitHub</a></h4>
       </div>
     );
   };
